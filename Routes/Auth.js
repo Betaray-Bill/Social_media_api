@@ -3,7 +3,7 @@ const User = require('../Models/User')
 const bcrypt = require('bcrypt')
 
 
-router.get('/register', async(req, res) => {
+router.get('/register', async(_req, res) => {
     try {
         let user = await User.find()
         console.log("Find");
